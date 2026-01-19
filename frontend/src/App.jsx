@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import FamilyTree from './components/FamilyTree';
 import LandingPage from './pages/LandingPage';
@@ -30,13 +30,6 @@ const DashboardLayout = ({ children }) => {
 }
 
 function App() {
-  useEffect(() => {
-    // Assuming 'tree' is your tree instance (e.g., from a ref or library)
-    if (tree) {
-      tree.fit();
-    }
-  }, []); // Empty dependency array for mount only
-
   return (
     <AuthProvider>
       <Router>
