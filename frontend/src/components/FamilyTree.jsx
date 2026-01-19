@@ -33,9 +33,20 @@ const FamilyTree = () => {
         }
     };
 
+
     useEffect(() => {
         fetchTree();
     }, []);
+
+    // Auto-fit to screen after tree loads
+    useEffect(() => {
+        if (roots.length > 0) {
+            // Wait a tick to ensure DOM is updated
+            setTimeout(() => {
+                handleFitToScreen();
+            }, 0);
+        }
+    }, [roots]);
 
     const handleAddRoot = () => {
         setModalConfig({ parentId: null, personToEdit: null });
