@@ -13,7 +13,7 @@ const LandingPage = () => {
                 <div className="shape shape-3"></div>
             </div>
 
-            <nav className="navbar glass-nav">
+            <nav className="navbar glass-nav" style={{padding: '8px 5%', minHeight: '44px'}}>
                 <div className="logo">
                     <div className="logo-icon-bg"><TreeDeciduous size={24} color="white" /></div>
                     <span className="logo-text">FamilyTreeMaker</span>

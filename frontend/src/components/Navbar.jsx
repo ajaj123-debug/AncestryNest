@@ -14,10 +14,10 @@ const Navbar = () => {
   // if (hideOn.includes(location.pathname)) return null;
 
   return (
-    <nav className="navbar" style={{ padding: '10px 20px', background: '#fff', borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+    <nav className="navbar" style={{ background: '#fff', borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 5%', minHeight: '44px' }}>
       <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-        <img src={logo} alt="AncestryNest Logo" style={{ height: '60px', background: 'white' }} />
-        <span style={{ fontWeight: 700, fontSize: 22, marginLeft: 10 }}></span>
+        <img src={logo} alt="AncestryNest Logo" style={{ height: '40px', background: 'white' }} />
+        <span style={{ fontWeight: 700, fontSize: 20, marginLeft: 10 }}></span>
       </div>
       <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
         {user ? (
