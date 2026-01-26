@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -8,10 +7,6 @@ const Navbar = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
-
-  // Hide navbar on some pages if needed (optional)
-  // const hideOn = [];
-  // if (hideOn.includes(location.pathname)) return null;
 
   return (
     <nav className="navbar" style={{ background: '#fff', borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 5%', minHeight: '44px' }}>
