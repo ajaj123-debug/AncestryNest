@@ -16,6 +16,7 @@ const Navbar = () => {
         <span style={{ fontWeight: 700, fontSize: 20, marginLeft: 10 }}></span>
       </div>
       <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        
         {user ? (
           <>
             <span>Welcome, {user.username}</span>
