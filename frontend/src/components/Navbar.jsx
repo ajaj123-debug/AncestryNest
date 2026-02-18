@@ -17,6 +17,7 @@ const Navbar = () => {
       </div>
       <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
         
+        
         {user ? (
           <>
             <span>Welcome, {user.username}</span>
