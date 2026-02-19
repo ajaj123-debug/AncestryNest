@@ -8,6 +8,7 @@ const Navbar = () => {
   
   const location = useLocation();
   const navigate = useNavigate();
+  
 
   return (
     <nav className="navbar" style={{ background: '#fff', borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 5%', minHeight: '44px' }}>
